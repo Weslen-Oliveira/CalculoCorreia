@@ -27,8 +27,8 @@ body {
 
 .tituloBody {
   font-family: 'Orbitron', sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
+  font-size: 3.5em;
+  margin-bottom: 3em;
   background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink));
   -webkit-background-clip: text;
   background-clip: text;
@@ -55,7 +55,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   border-radius: 16px;
-  padding: 2.5rem;
+  padding: 5em;
   width: 100%;
   max-width: 500px;
   box-shadow: 
@@ -72,7 +72,7 @@ body {
 
 .Dmenor, .Dmaior, .Nvoltas {
   margin-bottom: 1.8rem;
-  font-size: 1.1rem;
+  font-size: 2.5em;
   color: var(--text-light);
   position: relative;
 }
@@ -85,7 +85,7 @@ body {
   border: 1px solid rgba(0, 242, 255, 0.2);
   border-radius: 8px;
   color: white;
-  font-size: 1rem;
+  font-size: 1em;
   transition: all 0.3s ease;
 }
 
@@ -104,13 +104,13 @@ body {
   border-radius: 8px;
   color: var(--dark-bg);
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 2em;
   font-family: 'Orbitron', sans-serif;
   cursor: pointer;
   transition: all 0.4s;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-top: 1rem;
+  margin-top: 1.2em;
   box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
 }
 
@@ -124,7 +124,7 @@ body {
 .tituloResp {
   text-align: center;
   margin-top: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 3em;
   color: var(--neon-blue);
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 1px;
@@ -141,7 +141,7 @@ body {
   background: rgba(0, 242, 255, 0.1);
   border-radius: 12px;
   color: white;
-  font-size: 1.8rem;
+  font-size: 2.5em;
   font-weight: bold;
   font-family: 'Orbitron', sans-serif;
   border: 1px solid rgba(0, 242, 255, 0.2);
@@ -180,4 +180,5 @@ body::before {
 #calculoResp.show {
     opacity: 1;
     transform: scale(1);
-}     
+} 
+   
