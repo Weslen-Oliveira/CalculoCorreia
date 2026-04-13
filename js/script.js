@@ -18,17 +18,17 @@ btnCalcular.addEventListener('click', () => {
     
     resp.innerText = `${Mts} metro(s) e ${MM} milímetro(s)`;
     resp.style.color = 'green';
-    divModal.style.display = 'flex';
+    divModal.classList.add('ativo');
 
     if(Dmenor <= 0 || Dmaior <= 0 || Nvoltas <= 0) {
         resp.innerText = `*Preencha todos os Campos !`;
         resp.style.color = 'red';
-        divModal.style.display = 'flex';
+        divModal.classList.add('ativo');
     }
 
 });
 btnFechar.addEventListener('click', () => {
-    divModal.style.display = 'none'; //Esconde o modal
+    divModal.classList.remove('ativo'); //Esconde o modal
     frm.reset(); //Apaga os Campos do Formulário
     resp.innerText = ''; //Limpa a resposta do modal
 });

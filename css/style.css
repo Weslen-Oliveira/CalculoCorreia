@@ -1,6 +1,7 @@
 @import 'modal.css';
 @import 'inputs.css';
 @import 'responsivo.css';
+@import 'rodape.css';
 
 *{
     margin: 0;
@@ -24,6 +25,9 @@ body{
     border-radius: .4em .4em 0 0;
     border-bottom: .2em solid #fe7500;
     box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 img{
     width: 50%;
