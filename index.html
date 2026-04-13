@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Cálculo de Correia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cálculo Linear</title>
 </head>
 <body>
-    <header><p>Desenvolvido por <span>Weslen.O.Santos</span></p></header>
-    <h1 class="tituloBody">Cálculo Linear de Correia</h1>
-    <form id="frm" class="form">
-        <p class="Dmenor">Diâmetro menor
-            <input type="number" id="Dmenor" class="inputDmenor" placeholder="Medidas em m.m">
-        </p>
+    <div class="divModal" id="divModal">
+        <div class="modal" id="modal">
+            <h1 class="tituloModal" id="tituloModal">Metragem Linear</h1>
+            <!-- <h3 class="mtsLinear" id="mtsLinear">Metragem Linear</h3> -->
+            <h3 class="resp" id="resp"></h3>
+            <button type="reset" class="btnFecharModal" id="btnFecharModal">X</button>
+        </div>
+    </div>
+    <div class="divfrm">
+        <form class="frm" id="frm">
+            <nav class="divIcon" id="divIcon">
+                <img src="/img/Group 2.svg" alt="">
+            </nav>
+            <h1>Cálculo Linear</h1>
+            <h4>Digite os valores em Milímetros</h4>
+            <div class="divInput">
+                <div class="inputBox">
+                    <input type="number" class="largura" id="Dmenor" name="Dmenor" required>
+                    <label for="Dmenor">Diâmetro Menor</label>
+                </div>
 
-        <p class="Dmaior">Diâmetro maior
-            <input type="number" id="Dmaior" class="inputDmaior" placeholder="Medidas em M.M">
-        </p>
+                <div class="inputBox">
+                    <input type="number" class="largura" id="Dmaior" name="Dmaior" required>
+                    <label for="Dmaior">Diâmetro Maior</label>
+                </div>
 
-        <p class="Nvoltas">Números de voltas
-            <input type="number" id="Nvoltas" class="inputNvoltas" placeholder="Digite o n° de voltas">
-        </p>
+                <div class="inputBox">
+                    <input type="number" class="largura" id="Nvoltas" name="Nvoltas" required>
+                    <label for="Nvoltas">Número de Voltas</label>
+                </div>
+                <button type="button" class="btnCalcular" id="btnCalcular">Calcular</button>
+            </div>
+        </form>
+    </div>
 
-        <input type="submit" class="btn" value="Calcular">
-        <button id="limpar" class="btn">Limpar</button>
-    </form>
-    <h3 id="tituloResp" class="tituloResp"></h3>
-    <h3 id="calculoResp" class="calculoResp"></h3>
-
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

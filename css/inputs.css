@@ -1,0 +1,43 @@
+.inputBox {
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+/* INPUT */
+.inputBox input {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: .4em;
+    outline: none;
+    font-size: 1em;
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+/* LABEL (começa dentro) */
+.inputBox label {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    color: #777;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.3s ease;
+    background: whitesmoke;
+    padding: 0 5px;
+}
+
+/* QUANDO CLICA OU TEM VALOR */
+.inputBox input:focus + label,
+.inputBox input:valid + label {
+    top: -8px;
+    font-size: 0.75em;
+    color: #fe7500;
+}
+
+/* EFEITO NO INPUT */
+.inputBox input:focus {
+    border-color: #fe7500;
+    box-shadow: 0 0 5px rgba(254, 117, 0, 0.5);
+}
