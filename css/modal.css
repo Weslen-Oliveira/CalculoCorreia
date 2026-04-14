@@ -43,6 +43,11 @@
     text-align: center;
     margin-block: 1em;
 }
+.resp{
+    font-size: 1.5em;
+    text-align: center;
+    margin-block: 1em;
+}
 .btnFecharModal{
     position: absolute;
     top: -1.5em;

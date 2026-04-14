@@ -16,7 +16,7 @@ btnCalcular.addEventListener('click', () => {
     let Mts = Math.floor(calculoFinal / 1000);
     let MM = Math.floor(calculoFinal % 1000);
     
-    resp.innerText = `${Mts} metro(s) e ${MM} milímetro(s)`;
+    resp.innerText = `${Mts} Mts e ${MM} m.ms`;
     resp.style.color = 'green';
     divModal.classList.add('ativo');
 
